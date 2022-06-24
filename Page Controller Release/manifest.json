@@ -1,0 +1,16 @@
+{
+    "name": "PageController",
+    "description": "Enables the user to stop other pages with the same url from being executed.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_title" : "Page Controller",
+        "default_popup" : "popup.html"
+    },
+    "background":{
+        "service_worker" : "script.js"
+    },
+    "permissions":["tabs","storage"],
+    "host_permissions": ["https://*/*"]
+}
+  
